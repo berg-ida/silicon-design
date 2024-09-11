@@ -40,6 +40,12 @@ body {
 
 }
 
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
 .container {
     width: 100%;
     padding-left: var(--container-padding);
@@ -166,16 +172,13 @@ header .container {
     padding-bottom: 1rem;
 }
 
-main .container3 {
-    display: flex;
-    flex-direction: column;
+main .container2 {
     gap: 10px;
-    align-items: center;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgb(241, 238, 248));
 }
 
-.container3 {
-    width: 100%;
+.grid-container {
+
     padding-left: var(--container-padding);
     padding-right: var(--container-padding);
 }
@@ -186,6 +189,9 @@ p {
     margin-left: 13px;
     text-align: center;
     font-size: 22px;
+}
+
+#text2 {
     padding-bottom: 35px;
 }
 
@@ -204,7 +210,13 @@ h1 {
     padding-bottom: 15px;
 }
 
-.phone {
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item5 {
     display: none;
 }
 
@@ -215,6 +227,85 @@ h1 {
 .label2:hover {
     color: var(--color-primary);
 }
+
+#brands {
+    display: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.brand-box {
+    border: 1px solid var(--color-grey300);
+    border-radius: 8px;
+    height: 100px;
+    width: 196px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2 .container {
+    
+    h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    p {
+        font-size: 18px;
+    }
+
+    img {
+        background-color: var(--color-grey100);
+        padding: 1.3rem;
+        border-radius: 8px;
+    }
+}
+
+
+
+
+footer {
+    font-size: 14px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    p {
+        color: var(--color-grey600);
+    }
+
+    .copyright {
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 768px) {
     .container {
@@ -227,12 +318,6 @@ h1 {
         gap: 3rem;
     }
 
-    main .container3 {
-        display: grid;
-        grid-template-columns: 35% 65%;
-        grid-template-rows: 4 auto;
-    }
-
     .container2 {
         place-items: center;
     }
@@ -243,32 +328,93 @@ h1 {
         padding-right: 200px;
     }
 
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: .5fr .5fr .5fr;
+    }
 
-    .phone {
-        display: block;
-        height: 100%;
+    .grid-item1 {
+        p {
+            text-align: left;
+            font-size: 20px;
+            padding-left: 10px;
+        }
+        padding-top: 70px;
+    }
+
+    .grid-item2 {
+        width: 150px;
+        height: 50px;
+    }
+    
+    #appstore > img {
         width: 100%;
-        padding: 50px;
-        grid-column: 2;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+      
+    }
+
+    .grid-item3 {
+        width: 150px;
+        height: 50px;
+    }
+
+    #googleplay > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin: .5rem;
+        gap: 1.5rem;
+        padding-left: 1rem;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .grid-item4 {
+        grid-column: 1;
+        grid-row: 3;
+        padding-left: 1rem;
+    }
+
+    .grid-item5 {
+        display: block;
+        grid-column-start: 2;
+        grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 4;
-        /* fixa telefon bilden, ena kanten är cut off för nån anledning */
+        place-self: center;
+    }
+    
+
+    #brands {
+        display: block;
     }
 
-    p {
-        text-align: left;
+    #brand-5, #brand-6 {
+        display: none;
     }
 
-    #googleplay {
-        grid-row: 2;
-        grid-column: 1;
-        width: 50%;
-    }
-
-    #appstore {
-        grid-row: 2;
-        grid-column: 1;
-        width: 50%;
+    footer {
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .copyright {
+            margin: 0;
+        }
+        .credit {
+            margin-left: .3rem;
+        }
     }
 }
 
@@ -292,4 +438,60 @@ h1 {
     .btn-mobile {
         display: none;
     }
+
+    main .container2 {
+        max-width: 1320px;
+        height: 875px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: auto 4;
+    }
+
+    .grid-container {
+        height: 800px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+
+
+    .container2 h1 {
+        text-align: left;
+        grid-column: 1;
+        grid-row: 1;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 8rem;
+    }
+    
+    .grid-item1 {
+       grid-column: 1;
+       grid-row: 2;
+       padding-top: 1rem;
+       place-self: start;
+    }
+
+    .flex {
+        padding-top: 2.5rem;
+    }
+
+   .grid-item4 {
+        padding-top: 9rem;
+    }
+
+    .grid-item5 {
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        place-self: unset;
+    }
+
+    #brand-5, #brand-6 {
+        display: flex;
+    }
+
 }
