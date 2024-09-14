@@ -301,30 +301,27 @@ header .container {
         text-align: center;
         font-weight: 800;
     }
-
     h3 {
         font-size: 22px;
         padding-left: 2rem;
         align-self: start;
         font-weight: 800;
     }
-
     p {
         font-size: 20px;
         color: var(--color-grey700);
         text-align: center;
         padding-bottom: 1rem;
     }
-
     .image {
         display: none;
     }
 }
 .container .box1, .box2, .box3, .box4, .box5, .box6 { 
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: "img h3" "img p";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: .5fr .5fr;
+    grid-template-areas: "img h3 h3 h3 h3" "img p p p p";
 
     p {
         font-size: 18px;
@@ -345,6 +342,25 @@ header .container {
     }
 }
 
+
+
+
+
+
+
+    /* -----TESTIMONIAL----- */
+    .testimonial {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
     /* -----FOOTER----- */
 
 footer {
@@ -359,6 +375,7 @@ footer {
     }
     p {
         color: var(--color-grey600);
+        text-align: center;
     }
     .copyright {
         padding: 0;
@@ -428,11 +445,9 @@ footer {
             font-size: 34px;    
             padding-bottom: 0;
         }
-
         p {
             padding-bottom: 1.5rem;
         }
-        
         .boxes {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -456,6 +471,30 @@ footer {
     #brand-5, #brand-6 {
         display: none;
     }
+
+
+
+
+
+
+    /* -----TESTIMONIAL----- */
+    .testimonial {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* -----FOOTER----- */
 
@@ -547,12 +586,92 @@ footer {
     /* -----PAGE 2-----*/
 
     .page2 .container {
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: "iphone text" "iphone content";
 
         .image {
-            display: flex;
+            grid-area: iphone;
+            display: block;
+            padding-top: 4rem;
+            padding-right: 6rem;
+            padding-bottom: 4rem;
+        }
+        .boxes {
+            grid-area: content;
+            padding-bottom: 5rem;
+        }
+        h2 {
+            grid-area: text;
+            text-align: left;
+            padding-top: 4rem;
+        }
+        p {
+            grid-area: text;
+            text-align: left;
+            padding-top: 10rem;
+        }
+
+    }
+
+    .container .box1, .box2, .box3, .box4, .box5, .box6 {
+        
+        grid-template-areas: "img h3" "img p";
+
+        img {
+            grid-area: img;
+        }
+        h3 {
+            grid-area: h3;
+            padding: 0;
+            padding-left: 1.5rem;
+         
+            margin-top: 2rem;
+        }
+        p {
+            grid-area: p;
+            padding: 0;
+            padding-left: 1.5rem;
         }
     }
+
+
+
+    /* -----TESTIMONIAL----- */
+
+    .testimonial {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "text images";
+
+        background-color: var(--color-grey100);
+
+        h2 {
+            font-size: 36px;
+            font-weight: 800;
+            grid-area: text;
+            padding-right: 2rem;
+            padding-left: 310px;
+            padding-top: 40px;
+        }
+        .images {
+           grid-area: images;
+
+           padding-top: 60px;
+           padding-bottom: 80px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
 
 
     /* -----BRAND BOX----- */
