@@ -393,45 +393,98 @@ header .container {
     }
 
     /* -----TESTIMONIAL----- */
+
     .testimonial {
         display: none;
     }
 
+    /* -----PAGE 5----- */
+    .page5 {
+        
+    }
+
+    /* -----NEWSLETTER----- */
+
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        margin-left: var(--container-padding);
+        margin-right: var(--container-padding);
+        background-color: var(--color-grey200);
+        padding-top: 3rem;
+        border-radius: .5rem;
+        place-items: center;
+       
+        .notification {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 1.5rem;
+
+            .mobile-text {
+                color: var(--color-grey900);
+                font-size: 22px;
+                font-weight: 800;
+                width: 50%;
+                margin-left: 1rem;
+            }
+            .desktop-text {
+                display: none;
+            }
+        }
 
 
+        .input-box {
+            display: flex;
+            position: relative;
+            margin-bottom: 2.5rem;
 
-
-
-
-
+            .form-input {
+                border: 1px solid var(--color-grey400);
+                padding: .8rem;
+                font-size: 16px;
+                border-radius: .5rem 0 0 .5rem;
+            }
+            .btn {
+                background-color: var(--color-primary);
+                color: var(--color-white);
+                padding: .5rem 2rem;
+                border: 0;
+                font-size: 16px;
+                border-radius: 0 .5rem .5rem 0;
+            }
+            .email {
+                padding-left: 2.5rem;
+            }
+            .icon {
+                position: absolute;
+                top: 50%;
+                left: 1rem;
+                transform: translateY(-50%);
+                color: var(--color-grey600);
+            }   
+        }
+    }
 
     /* -----FOOTER----- */
 
-footer {
-    font-size: 14px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    footer {
+        font-size: 14px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        p {
+            color: var(--color-grey600);
+            text-align: center;
+        }
+        .copyright {
+            padding: 0;
+        }
     }
-    p {
-        color: var(--color-grey600);
-        text-align: center;
-    }
-    .copyright {
-        padding: 0;
-    }
-}
-
-
-
-
-
-
-
 
 
 
@@ -556,19 +609,26 @@ footer {
         display: none;
     }
 
+    /* -----NEWSLETTER----- */
 
+    .newsletter {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: row;
 
+        .notification {
+            margin-left: 2rem;
+            padding-bottom: 3rem;
 
-
-
-
-
-
-
-
-
-
-
+            .mobile-text {
+                width: 60%;
+            }
+        }
+        .input-box {
+            margin-right: 1.5rem;
+        }
+    }
 
     /* -----FOOTER----- */
 
@@ -837,17 +897,30 @@ footer {
         }
     }
 
+    /* -----NEWSLETTER----- */
 
+    .newsletter {
+        margin-right: 23rem;
+        margin-left: 23rem;
 
+        .notification {
+            padding-left: 5rem;
 
-        
-
-
-
-
-
-
-
+            .mobile-text {
+                display: none;
+            }
+            .desktop-text {
+                padding-left: 1rem;
+                display: block;
+                font-size: 22px;
+                font-weight: 800;
+                width: 70%;
+            }
+        }
+        .input-box {
+            padding-right: 4rem;
+        }
+    }
 
     /* -----TESTIMONIAL----- */
 
