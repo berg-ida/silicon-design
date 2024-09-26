@@ -373,8 +373,8 @@ header .container {
             font-weight: 800;
             font-size: 22px;
             text-align: center;
-            padding-left: 6rem;
-            padding-right: 6rem;
+            padding-left: 10svh;
+            padding-right: 10svh;
         }
         p {
             color: var(--color-grey700);
@@ -400,7 +400,121 @@ header .container {
 
     /* -----PAGE 5----- */
     .page5 {
-        
+        .phone, .message {
+            display: none;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;   
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+
+            h2 {
+                text-align: center;
+                font-size: 25px;
+                font-weight: 800;
+                width: 80%;
+            }
+            p {
+                color: var(--color-grey800);
+                text-align: center;
+                width: 90%;
+                font-size: 18px;
+            }
+        }
+        .questions {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 3rem;
+
+            .discovermore {
+                display: flex;
+                
+                .btn-circle {
+                    display: flex;
+                    align-self: center;
+                    justify-items: right;
+                    background-color: var(--color-grey100);
+                }
+            }
+
+
+            h4 {
+                text-align: left;
+                font-weight: 600;
+                font-size: 16px;
+                width: 80%;
+            }
+
+            .question1 {
+                display: flex;
+                flex-direction: row;
+                border: solid 1px var(--color-grey300);
+                border-radius: 7px 7px 0 0;
+                padding-left: 1rem;
+                width: 90%;
+                align-self: center;
+            }
+
+            .text1 {
+                border: solid 1px var(--color-grey300);
+                align-self: center;
+                width: 90%;
+                padding: 1rem;
+                
+                p {
+                    font-size: 16px;
+                    color: var(--color-grey800);
+                    padding-bottom: 1rem;
+                }
+            }
+
+            .text3 {
+                display: none;
+            }
+
+            .question2, .question3, .question4, .question5 {
+                display: flex;
+                flex-direction: row;
+                border: solid 1px var(--color-grey300);
+                padding-left: 1rem;
+                width: 90%;
+                align-self: center;
+            }
+
+            .question6 {
+                display: flex;
+                flex-direction: row;
+                border: solid 1px var(--color-grey300);
+                border-radius: 0 0 7px 7px;
+                padding-left: 1rem;
+                width: 90%;
+                align-self: center;
+            }    
+        }
+
+        .contact-mobile {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+
+            .btn-primary {
+                background-color: var(--color-primary);
+                color: var(--color-white);
+                border-radius: 5px;                     
+                align-items: center;
+                text-decoration: none;
+                width: 40%;
+            }
+            .btn-primary:hover{
+                background-color: var(--color-grey600);
+                color: var(--color-white);
+                text-decoration: none;
+            }
+        }
     }
 
     /* -----NEWSLETTER----- */
@@ -419,12 +533,13 @@ header .container {
             display: flex;
             flex-direction: row;
             padding-bottom: 1.5rem;
+            width: 90%;
 
             .mobile-text {
                 color: var(--color-grey900);
                 font-size: 22px;
                 font-weight: 800;
-                width: 50%;
+                width: 60%;
                 margin-left: 1rem;
             }
             .desktop-text {
@@ -437,12 +552,14 @@ header .container {
             display: flex;
             position: relative;
             margin-bottom: 2.5rem;
+            width: 90%;
 
             .form-input {
                 border: 1px solid var(--color-grey400);
                 padding: .8rem;
                 font-size: 16px;
                 border-radius: .5rem 0 0 .5rem;
+                width: 90%;
             }
             .btn {
                 background-color: var(--color-primary);
