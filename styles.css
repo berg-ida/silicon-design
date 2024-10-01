@@ -399,11 +399,11 @@ header .container {
     }
 
     /* -----PAGE 5----- */
+    
     .page5 {
         .phone, .message {
             display: none;
         }
-
         .contact {
             display: flex;
             flex-direction: column;
@@ -415,12 +415,12 @@ header .container {
                 text-align: center;
                 font-size: 25px;
                 font-weight: 800;
-                width: 80%;
+                width: 70%;
             }
             p {
                 color: var(--color-grey800);
                 text-align: center;
-                width: 90%;
+                width: 75%;
                 font-size: 18px;
             }
         }
@@ -440,15 +440,12 @@ header .container {
                     background-color: var(--color-grey100);
                 }
             }
-
-
             h4 {
                 text-align: left;
                 font-weight: 600;
                 font-size: 16px;
                 width: 80%;
             }
-
             .question1 {
                 display: flex;
                 flex-direction: row;
@@ -457,8 +454,14 @@ header .container {
                 padding-left: 1rem;
                 width: 90%;
                 align-self: center;
-            }
 
+                .btn-circle {
+                    background-color: var(--color-primary);
+                    .fa-solid {
+                        color: var(--color-white);
+                    }
+                }
+            }
             .text1 {
                 border: solid 1px var(--color-grey300);
                 align-self: center;
@@ -471,11 +474,9 @@ header .container {
                     padding-bottom: 1rem;
                 }
             }
-
             .text3 {
                 display: none;
             }
-
             .question2, .question3, .question4, .question5 {
                 display: flex;
                 flex-direction: row;
@@ -484,7 +485,6 @@ header .container {
                 width: 90%;
                 align-self: center;
             }
-
             .question6 {
                 display: flex;
                 flex-direction: row;
@@ -495,7 +495,6 @@ header .container {
                 align-self: center;
             }    
         }
-
         .contact-mobile {
             display: flex;
             justify-content: center;
@@ -724,6 +723,141 @@ header .container {
     /* -----TESTIMONIAL----- */
     .testimonial {
         display: none;
+    }
+
+    /* -----PAGE 5----- */
+
+    .page5 {
+        .contact {
+            h2 {
+                width:33%;
+            }
+            p {
+                width: 52%;
+            }
+        }
+        .discovermore {
+            margin-left: 4.5rem;
+        }
+        .questions {
+            .text1 {
+                display: none;
+            }
+            .text3 {
+                display: flex;
+                flex-direction: row;              
+                align-self: center;
+                padding: 1rem;                    
+                p {
+                    font-size: 16px;
+                    color: var(--color-grey800);
+                    padding-bottom: 1rem;
+                }
+            }
+            .question1, .question2, .question3, .question4, .question5, .question6 {
+                border: var(--color-white);
+                border-radius: 8px;
+                box-shadow: 2px 2px 5px var(--color-grey200), -2px 2px 5px var(--color-grey200);
+                margin-bottom: 1rem;
+            }
+            .question1 {
+                .btn-circle {
+                    background-color: var(--color-grey100);
+                    .fa-solid {
+                        color: var(--color-grey800);
+                    }
+                }
+            }
+            .question6 {
+                margin-bottom: 0;
+            }
+            .text3 {
+                align-self: center ;
+                width: 90%;
+                padding: 1rem;
+                border-radius: 8px;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                box-shadow: 2px 2px 5px var(--color-grey200), -2px 2px 5px var(--color-grey200);
+                margin-bottom: 1rem;
+            }
+            .question3 {
+                margin-bottom: 0;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                box-shadow: 2px 2px 5px var(--color-white), -2px 2px 5px var(--color-grey200);
+
+                .btn-circle {
+                    background-color: var(--color-primary);
+                    .fa-solid {
+                        color: var(--color-white);
+                    }
+                }
+            }
+        }
+        .contact-mobile {
+            display: none;
+        }
+        .contact-us {
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            margin-bottom: 3rem;
+
+            .phone {
+                justify-content: left;
+                padding-left: 1rem;
+                padding-right: 8rem;
+                display: flex;
+                flex-direction: column;
+                border: solid 1px var(--color-grey300);
+                border-radius: 8px;
+
+                #phonecall {
+                    width: 35%;
+                    height: 35%;
+                    padding-top: 1.5rem;
+                }
+                p {
+                    padding-top: 1rem;
+                    color: var(--color-grey700);
+                    width: 100%;  
+                }
+                #contact-us {
+                    padding-top: 1rem;
+                    color: var(--color-primary);
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            .message {
+                justify-content: left;
+                padding-left: 1rem;
+                padding-right: 8rem;
+                display: flex;
+                flex-direction: column;
+                border: solid 1px var(--color-grey300);
+                border-radius: 8px;
+
+                #message {
+                    width: 35%;
+                    height: 35%;
+                    padding-top: 1.5rem;
+                }
+                p {
+                    padding-top: 1rem;
+                    color: var(--color-grey700);
+                    width: 100%;
+                }
+                #contact-us {
+                    padding-top: 1rem;
+                    color: var(--color-success);
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }   
+        }
     }
 
     /* -----NEWSLETTER----- */
@@ -1014,11 +1148,85 @@ header .container {
         }
     }
 
+    /* ----PAGE 5----- */
+
+    .page5 {
+        .faq {
+
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "contact questions" "contact-us questions";
+
+            .contact {
+                margin-top: 3rem;
+                grid-area: contact;
+
+                h2 {
+                    font-size: 32px;
+                    width: 45%;
+                    text-align: left;
+                }
+                p {
+                    text-align: left;
+                    width: 55%;
+                    margin-left: 5rem;
+                }
+            }
+            .contact-us {
+                grid-area: contact-us;
+                align-self: center;
+                margin-left: 12rem;
+
+                .phone {
+                    padding-right: 5rem;
+                    padding-bottom: 2rem;
+                    margin-bottom: 5rem;
+
+                    #phonecall {
+                        width: 33%;
+                        height: 33%;
+                    }
+                    p {
+                        padding-top: 2rem;
+                    }
+                    #contact-us {
+                        padding-top: 1rem;
+                    }
+                }
+                .message {
+                    padding-right: 5rem;
+                    padding-bottom: 2rem;
+                    margin-bottom: 5rem;
+
+                    #message {
+                        width: 33%;
+                        height: 33%;
+                    }
+                    p {
+                        padding-top: 2rem;
+                    }
+                    #contact-us {
+                        padding-top: 1rem;
+                    }
+                }
+            }
+
+            .questions {
+                grid-area: questions;
+                margin-top: 6.5rem;
+                margin-right: 10rem;
+                margin-bottom: 5rem;
+            }
+        }
+    }
+
     /* -----NEWSLETTER----- */
 
     .newsletter {
         margin-right: 23rem;
         margin-left: 23rem;
+        gap: 1rem;
 
         .notification {
             padding-left: 5rem;
@@ -1029,9 +1237,8 @@ header .container {
             .desktop-text {
                 padding-left: 1rem;
                 display: block;
-                font-size: 22px;
-                font-weight: 800;
-                width: 70%;
+                font-size: 20px;
+                font-weight: 800;;
             }
         }
         .input-box {
@@ -1058,7 +1265,6 @@ header .container {
         }
         .images {
         grid-area: images;
-
         padding-top: 60px;
         padding-bottom: 80px;
         }
