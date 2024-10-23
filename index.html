@@ -15,13 +15,15 @@
             <div class="container">
     
                 <a id="logo" href="index.html"><img src="images/logo.svg" alt="Silicon Design Logotype"></a>
+                <a id="darkmode-logo" href="index.html"><img src="images/darkmode-logo.svg" alt="Silicon Design Logotype"></a>
                 <nav id="main-menu" class="navbar">
                     <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </nav>
     
                 <div id="darkmode-toggle-switch" class="btn-toggle-switch">
                     <span class="label">Dark mode</span>
-                    <label for="darkmode-switch" class="toggle-switch">
+                    <label for="darkmode-switch" aria-label="darkmode switch" class="toggle-switch">
                         <input id="darkmode-switch" type="checkbox">
                         <span class="slider round"></span>
                     </label>
@@ -54,6 +56,8 @@
                         <div class="buttons">
                             <a class="btn-store" href="#"><img src="images/appstore.svg" alt="Appstore Button"></a>
                             <a class="btn-store" href="#"><img src="images/googleplay.svg" alt="Googleplay Button"></a>
+                            <a class="btn-darkmode-store" href="#"><img src="images/darkmode-appstore.svg" alt="Appstore Button"></a>
+                            <a class="btn-darkmode-store" href="#"><img src="images/darkmode-googleplay.svg" alt="Googleplay Button"></a>
                         </div>
 
                         <a class="discovermore" href="#">
@@ -110,7 +114,7 @@
                        
                         <div class="boxes">
                             <section class="box1">
-                                <img src="images/payments.svg.svg" alt="Payments Design">
+                                <img id="box-image" src="images/payments.svg.svg" alt="Payments Design">
                                 <h3>Easy Payments</h3>
                                 <p>Id mollis consectetur congue egestas
                                     egestas suspendisse blandit justo.</p>
@@ -231,6 +235,8 @@
                 <div class="images">
                     <img id="testimonial1" src="images/testimonial1.svg" alt="Testimonial Example">
                     <img id="testimonial2" src="images/testimonial2.svg" alt="Testimonial Example">
+                    <img id="darkmode-testimonial1" src="images/darkmode-testimonial1.svg" alt="Testimonial Example">
+                    <img id="darkmode-testimonial2" src="images/darkmode-testimonial2.svg" alt="Testimonial Example">
                 </div>
             </section>
 
@@ -343,7 +349,7 @@
                     </div>
                     <div class="input-box">
                         <i class="fa-regular fa-envelope icon"></i>
-                        <input class="form-input email" type="email" placeholder="Your Email">
+                        <input id="form-input" class="form-input email" type="email" placeholder="Your Email">
                         <button class="btn">Subscribe</button>
                     </div>
                 </section>
@@ -362,5 +368,7 @@
 
     </div>
     
+
+    <script src="darkmode.js"></script>
 </body>
 </html>
